@@ -1,0 +1,35 @@
+coeff_path: './2_more_coef.csv'
+TDV54_path: './TDV_54.csv'
+FCM_coef: './FCM_coef.csv'
+param54_path: './parameter_54.csv' 
+
+columns :
+  x_col : ['AA_coef_1','AA_coef_2','AA_coef_3','AA_coef_4','AA_coef_5','AA_coef_6','AA_coef_7','AA_coef_8','AA_coef_9','AA_coef_10','AA_coef_11','AA_coef_12','AA_coef_13','AA_coef_14','AA_coef_15','AA_coef_16']
+  y_col : ['MD']
+  
+params :
+  knn: 
+    n_neighbors: [3, 5, 7, 9]
+    weights: ['uniform', 'distance']
+    metric: ['euclidean', 'manhattan', 'chebyshev']
+    p: [1, 2]
+
+  svm:
+    kernel: ['rbf', 'sigmoid', 'poly']
+    C: [0.01, 1, 1000, 100000]
+    gamma: ['auto','scale']
+    epsilon: [0.01,10,0.5]
+    
+  lgbm:
+    n_estimators: [10, 50, 100, 500, 1000]
+    max_depth: [7, 8, 50]
+    num_leaves: [31, 63]
+    min_child_sample: [10, 20, 30]
+    colsample_bytree: [0.8, 0.9]
+    subsample: [0.8, 0.9]
+
+  rf :
+    n_estimators: [10, 50, 100]
+    min_samples_split: [8, 16, 20]
+    min_samples_leaf: [8, 12]
+    max_depth: [6, 8]
