@@ -16,14 +16,22 @@ This study is based on a hybrid artificial intelligence technique that combines 
 2. Modify the code with the desired analysis file name.
    - Reference: The file for analysis should be formatted as follows: N X 52 ---- *(1)*  
      The blind spot TDV needs to be removed.
+
+    |PID|TDV1|TDV2|...|TDV54|
+    |------|---|---|---|---|
+    |patient1| | | | |
+    |patient2| | | | |
+    |...| | | | |
+    |patient N| | | | |
      
-                    TDV1 TDV2 ... TDV54
-         patient1
-         patient2
-            ...
-         patient N
-3. Modify to the desired number of representative archetypes (AT). We have chosen 16.
-4. You will obtain 'parameter' file and 'AA coefficient' file.
+            PID    |  TDV1 TDV2 ... TDV54
+         patient1  | 
+         patient2  |
+            ...    |
+         patient N |
+     
+4. Modify to the desired number of representative archetypes (AT). We have chosen 16.
+5. You will obtain 'parameter' file and 'AA coefficient' file.
 
 ## Fuzzy C-means
 1. download the 'FCM.py' file from GitHub.
@@ -32,11 +40,12 @@ This study is based on a hybrid artificial intelligence technique that combines 
    - Reference: The file for analysis should be formatted as follows: N X 54 ----- *(2)*  
      The blind spot TDV needs to be removed.
      
-                    TDV1 TDV2 ... TDV54
-         patient1
-         patient2
-            ...
-         patient N
+             PID   |  TDV1 TDV2 ... TDV54
+         patient1  | 
+         patient2  |
+            ...    |
+         patient N |
+     
 3. Modify the path of 'TDV54_path' in the 'config.yaml' file.
 4. Add columns with zero values at positions 26 and 35 in the parameter file generated from Archetype analysis, and update the param54_path in the config.yaml file.
 5. Adjust the coef.columns in the code to match the number of representative archetypes (AT) you have configured.
@@ -45,3 +54,42 @@ This study is based on a hybrid artificial intelligence technique that combines 
 ## Visualization
 1. Modify the path for 'FCM_coef' in 'config.yaml' to match the path where the 'FCM coefficient' were created in FCM.py.
 2. Set the number of iterations in the 'decomposition function' according to the number of representative archetypes (AT) you have chosen.
+3. You can obtain the proportion of each archetype (AT) for each patient. An example can be found in the visualization folder.
+
+## Slope
+1. Use the folder containing 'FCM coefficients', 'AA coefficients', 'MD (Mean Deviation)', and 'VFI (Visual Field Index)' for patients who have undergone testing at least 5 times.
+   - Reference: The file for analysis should be formatted as follows:
+     
+             PID   |  ExamDate FCM_coef1 ... FCM coef16  AA_coef1 ... AA coef16
+         patient1  | 
+         patient2  |
+            ...    |
+         patient N |       
+        
+
+        
+2. You will obtain 'FCM slope', 'AA slope', 'MD slope', 'VFI slope'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
