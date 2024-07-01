@@ -42,10 +42,10 @@
      
 |PID|TDV1|TDV2|...|TDV25|TDV26|...|TDV34|TDV35|...|TDV54|
 |------|---|---|---|---|---|---|---|---|---|---|
-|patient1| | | | |0 | | | |0 | |
-|patient2| | | | |0 | | | |0 | |
-|...| | | | |0 | | | |0 | |
-|patient N| | | | |0 | | | |0 | |
+|patient1| | | | |0 | | |0 | | |
+|patient2| | | | |0 | | |0 | | |
+|...| | | | |0 | | |0 | | |
+|patient N| | | | |0 | | |0 | | |
      
 3. Modify the path of 'TDV54_path' in the 'config.yaml' file.
 4. Add columns with zero values at positions 26 and 35 in the 'parameter' file generated from Archetype analysis, and update the 'param54_path' in the 'config.yaml' file.
