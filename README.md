@@ -1,6 +1,7 @@
 # glaucoma_VF                                  
 This study is based on a hybrid artificial intelligence technique that combines archetypal analysis (AA) and fuzzy c-means (FCM) clustering. The objective is to minimize the projection loss that occurs when visual field tests are analyzed solely using archetypal analysis. By doing so, the method aims to analyze and classify visual field tests without any loss of information.
 
+
 ## Data
 * TDV values of patients with glaucoma or suspected glaucoma. (We used data from 132,938 patients.)
   When conducting the analysis, two sets are required:
@@ -24,7 +25,7 @@ This study is based on a hybrid artificial intelligence technique that combines 
 |...| | | | |
 |patient N| | | | |
      
-4. Modify to the desired number of representative archetypes (AT). We have chosen 16.
+4. Modify to the desired number of representative archetypes (AT). We have chosen 16. (You can refer to the RSS graph.)
 5. You will obtain 'parameter' file and 'AA coefficient' file.
 
 ## Fuzzy C-means
