@@ -21,12 +21,12 @@
    - Reference: The file for analysis should be formatted as follows: N X 52 ---- *(1)*  
      The blind spot TDV needs to be removed.
 
-|PID|TDV1|TDV2|...|TDV54|
-|------|---|---|---|---|
-|patient1| | | | |
-|patient2| | | | |
-|...| | | | |
-|patient N| | | | |
+|PID|TDV1|TDV2|...|TDV25|TDV27|...|TDV34|TDV36|...|TDV54|
+|------|---|---|---|---|---|---|---|---|---|---|
+|patient1| | | | | | | | | | |
+|patient2| | | | | | | | | | |
+|...| | | | | | | | | | |
+|patient N| | | | | | | | | | |
      
 4. Modify to the desired number of representative archetypes (AT). We have chosen 16. (You can refer to the RSS graph.)
 
