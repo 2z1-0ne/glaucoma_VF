@@ -15,7 +15,8 @@ This study is based on a hybrid artificial intelligence technique that combines 
 1. download the 'Archetype.R' file from GitHub.
 2. Modify the code with the desired analysis file name.
    - Reference: The file for analysis should be formatted as follows: N X 52 ---- *(1)*
-     The blind spot TDV needs to be removed. 
+     The blind spot TDV needs to be removed.
+     
                     TDV1 TDV2 ... TDV54
          patient1
          patient2
@@ -27,8 +28,9 @@ This study is based on a hybrid artificial intelligence technique that combines 
 1. download the 'FCM.py' file from GitHub.
 2. Add blind spots to columns 26 and 35 of the TDV file used in Archetype.R. 
    Fill these columns with a value of 0.
-   - Reference: The file for analysis should be formatted as follows: N X 54 ----- *(2)
+   - Reference: The file for analysis should be formatted as follows: N X 54 ----- *(2)*
      The blind spot TDV needs to be removed.
+     
                     TDV1 TDV2 ... TDV54
          patient1
          patient2
