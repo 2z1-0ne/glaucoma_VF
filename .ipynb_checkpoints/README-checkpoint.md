@@ -38,18 +38,18 @@
 2. Add blind spots to columns 26 and 35 of the TDV file used in Archetype.R. 
    Fill these columns with a value of 0.
    - Reference: The file for analysis should be formatted as follows: N X 54 ----- *(2)*  
-     The blind spot TDV needs to be removed.
+     The blind spot areas must be included.
      
-|PID|TDV1|TDV2|...|TDV54|
-|------|---|---|---|---|
-|patient1| | | | |
-|patient2| | | | |
-|...| | | | |
-|patient N| | | | |
+|PID|TDV1|TDV2|...|TDV25|TDV26|...|TDV34|TDV35|...|TDV54|
+|------|---|---|---|---|---|---|---|---|---|---|
+|patient1| | | | |0 | | | |0 | |
+|patient2| | | | |0 | | | |0 | |
+|...| | | | |0 | | | |0 | |
+|patient N| | | | |0 | | | |0 | |
      
 3. Modify the path of 'TDV54_path' in the 'config.yaml' file.
-4. Add columns with zero values at positions 26 and 35 in the parameter file generated from Archetype analysis, and update the param54_path in the config.yaml file.
-5. Adjust the coef.columns in the code to match the number of representative archetypes (AT) you have configured.
+4. Add columns with zero values at positions 26 and 35 in the 'parameter' file generated from Archetype analysis, and update the 'param54_path' in the 'config.yaml' file.
+5. Adjust the 'coef.columns' in the code to match the number of representative archetypes (AT) you have configured.
 6. You will obtain 'FCM coefficient' file.
 
 ## Visualization
