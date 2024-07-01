@@ -1,7 +1,8 @@
-coeff_path: './2_more_coef.csv'
 TDV54_path: './TDV_54.csv'
-FCM_coef: './FCM_coef.csv'
 param54_path: './parameter_54.csv' 
+FCM_coef: './FCM_coef.csv'
+coeff_path: './2_more_coef.csv'
+
 
 columns :
   x_col : ['AA_coef_1','AA_coef_2','AA_coef_3','AA_coef_4','AA_coef_5','AA_coef_6','AA_coef_7','AA_coef_8','AA_coef_9','AA_coef_10','AA_coef_11','AA_coef_12','AA_coef_13','AA_coef_14','AA_coef_15','AA_coef_16']

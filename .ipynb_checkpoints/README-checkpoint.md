@@ -22,7 +22,8 @@ This study is based on a hybrid artificial intelligence technique that combines 
          patient2
             ...
          patient N
-3. You will obtain 'parameter' file and 'AA coefficient' file.
+3. Modify to the desired number of representative archetypes (AT). We have chosen 16.
+4. You will obtain 'parameter' file and 'AA coefficient' file.
 
 ## Fuzzy C-means
 1. download the 'FCM.py' file from GitHub.
@@ -38,4 +39,9 @@ This study is based on a hybrid artificial intelligence technique that combines 
          patient N
 3. Modify the path of 'TDV54_path' in the 'config.yaml' file.
 4. Add columns with zero values at positions 26 and 35 in the parameter file generated from Archetype analysis, and update the param54_path in the config.yaml file.
-5. You will obtain 'FCM coefficient' file.
+5. Adjust the coef.columns in the code to match the number of representative archetypes (AT) you have configured.
+6. You will obtain 'FCM coefficient' file.
+
+## Visualization
+1. Modify the path for 'FCM_coef' in 'config.yaml' to match the path where the 'FCM coefficient' were created in FCM.py.
+2. Set the number of iterations in the 'decomposition function' according to the number of representative archetypes (AT) you have chosen.

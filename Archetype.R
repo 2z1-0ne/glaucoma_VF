@@ -12,7 +12,7 @@ set.seed(42)
 
 aa = stepArchetypes(data = TDV, k = 1:20, nrep = 3,  verbose = TRUE)
 
-a16 = bestModel(aa[[16]])
+a16 = bestModel(aa[[16]]) #Modify to the desired number of representative archetypes (AT).
 
 AA_coef = predict(a16, TDV)
 
