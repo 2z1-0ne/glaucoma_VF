@@ -3,6 +3,8 @@
 
     ![projection loss](./git_image/image3.png)
 - After excluding visual field tests with low reliability, we use Archetypal Analysis (AA) to determine 16 representative archetypes (AT) with low reconstruction error. Subsequently, we cluster visual field test data into these 16 AT using Fuzzy C-Means (FCM) clustering. By decomposing individual patients' visual field tests into these 16 AT, we can measure the coefficients that indicate how much each AT contributes to a specific patient's visual field pattern. This allows us to present representative patterns. Furthermore, by analyzing changes in AT ratios, we can analyze the progression of glaucoma based on visual field test patterns.
+    ![repersentative patterns](./git_image/image1.png)
+  
 ## Data
 * TDV values of patients with glaucoma or suspected glaucoma. (We used data from 132,938 patients.)
   When conducting the analysis, two sets are required:
@@ -27,6 +29,8 @@
 |patient N| | | | |
      
 4. Modify to the desired number of representative archetypes (AT). We have chosen 16. (You can refer to the RSS graph.)
+
+    ![RSS graph](./git_image/image4.png)
 5. You will obtain 'parameter' file and 'AA coefficient' file.
 
 ## Fuzzy C-means
@@ -72,7 +76,7 @@
 3. Modify the path for 'coeff_path' in the 'config.yaml' file.
 4. If FCM coefficients are the target of analysis, then change x_col to x_col_FCM in the code X = data[col['x_col']].
 5. You will use files generated from KNN, lightGBM, RF, and SVM for paired t-tests.
-
+    ![result of machine learnig](./git_image/image2.png)
 
 
 
