@@ -6,6 +6,10 @@ This study is based on a hybrid artificial intelligence technique that combines 
   When conducting the analysis, two sets are required:
   - one with 52 columns and another with 54 columns.
   - The set with 52 columns involves removing blind spot areas from the 54-column TDV dataset.
+ 
+## Prerequisites
+* python 3.6
+* R studio 4.1.1
 
 ## Archetype Analysis
 
