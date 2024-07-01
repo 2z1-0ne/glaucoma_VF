@@ -6,6 +6,8 @@ coeff_path: './2_more_coef.csv'
 
 columns :
   x_col : ['AA_coef_1','AA_coef_2','AA_coef_3','AA_coef_4','AA_coef_5','AA_coef_6','AA_coef_7','AA_coef_8','AA_coef_9','AA_coef_10','AA_coef_11','AA_coef_12','AA_coef_13','AA_coef_14','AA_coef_15','AA_coef_16']
+  x_col_FCM : ['FCM_coef_1','FCM_coef_2','FCM_coef_3','FCM_coef_4','FCM_coef_5','FCM_coef_6','FCM_coef_7','FCM_coef_8','FCM_coef_9','FCM_coef_10','FCM_coef_11','FCM_coef_12','FCM_coef_13',
+  'FCM_coef_14','FCM_coef_15','FCM_coef_16']
   y_col : ['MD']
   
 params :

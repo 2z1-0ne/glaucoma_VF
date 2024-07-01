@@ -55,7 +55,7 @@ This study is based on a hybrid artificial intelligence technique that combines 
 1. Use the folder containing 'FCM coefficients', 'AA coefficients', 'MD (Mean Deviation)', and 'VFI (Visual Field Index)' for patients who have undergone testing at least 5 times.
    - Reference: The file for analysis should be formatted as follows:
      
-|PID|ExamDate|FCM_coef16|...|FCM_coefn|AA_coef1|...|AA_coef16|MD|VFI|
+|PID|ExamDate|FCM_coef16|...|FCM_coef16|AA_coef1|...|AA_coef16|MD|VFI|
 |------|---|---|---|---|---|---|---|---|---|
 |patient1| 2019-07-12| | | | | | | | |
 |patient2| | | | | | | | | |
@@ -64,8 +64,12 @@ This study is based on a hybrid artificial intelligence technique that combines 
          
 2. You will obtain 'FCM slope', 'AA slope', 'MD slope', 'VFI slope'
 
-
-
+## KNN, lightGBM, RF, SVM and paired t-test
+1. Utilize data from patients who have undergone testing at least 2 times.
+2. The data file should include AA coefficients and FCM coefficients.
+3. Modify the path for 'coeff_path' in the 'config.yaml' file.
+4. If FCM coefficients are the target of analysis, then change x_col to x_col_FCM in the code X = data[col['x_col']].
+5. You will use files generated from KNN, lightGBM, RF, and SVM for paired t-tests.
 
 
 
