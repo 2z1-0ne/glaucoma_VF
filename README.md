@@ -12,5 +12,13 @@ This study is based on a hybrid artificial intelligence technique that combines 
 * R studio 4.1.1
 
 ## Archetype Analysis
-
+1. download the Archetype.R file from GitHub
+2. Modify the code with the desired analysis file name.
+   - Reference: The file for analysis should be formatted as follows: N X 52
+     
+                    TDV1 TDV2 ... TDV54
+         patient1
+         patient2
+            ...
+         patient N
 
