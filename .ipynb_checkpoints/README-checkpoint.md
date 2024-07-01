@@ -56,7 +56,7 @@ This study is based on a hybrid artificial intelligence technique that combines 
    - Reference: The file for analysis should be formatted as follows:
      
 |PID|ExamDate|FCM_coef16|...|FCM_coefn|AA_coef1|...|AA_coef16|MD|VFI|
-|------|---|---|---|---|---|---|---|---|---|---|
+|------|---|---|---|---|---|---|---|---|---|
 |patient1| 2019-07-12| | | | | | | | |
 |patient2| | | | | | | | | |
 |...| | | | | | | | | |
