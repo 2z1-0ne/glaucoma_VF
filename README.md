@@ -15,9 +15,6 @@ If you use this code in your research, please cite the following paper:
 **Fuzzy clustering of 24–2 visual field patterns can detect glaucoma progression**  
 Lee, J., et al.
 
-🔗 Paper link:  
-https://doi.org/XXXXXXXX
-
 ---
 
 ## Research Context
@@ -49,19 +46,6 @@ Pusan National University
 
 📧 jiwon_lee@pusan.ac.kr
 
----
-
-## Citation
-
-If you use this repository in your research, please cite:
-
-```bibtex
-@article{lee_glaucoma_vf,
-  title={Fuzzy clustering of 24–2 visual field patterns can detect glaucoma progression},
-  author={Lee, Jiwon and others},
-  journal={},
-  year={2026}
-}
 
 # glaucoma_VF                                  
 - This study is based on a hybrid artificial intelligence technique that combines **archetypal analysis (AA)** and **fuzzy c-means (FCM) clustering**. The objective is to **minimize the projection loss** that occurs when visual field tests are analyzed solely using archetypal analysis. By doing so, the method aims to analyze and classify visual field tests without any loss of information.
