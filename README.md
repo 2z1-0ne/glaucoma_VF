@@ -13,7 +13,6 @@ The project focuses on detecting glaucoma progression by analyzing patterns in *
 If you use this code in your research, please cite the following paper:
 
 **Fuzzy clustering of 24–2 visual field patterns can detect glaucoma progression**  
-Lee, J., et al.
 
 ---
 
